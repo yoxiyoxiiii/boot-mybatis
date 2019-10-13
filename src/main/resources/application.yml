@@ -3,13 +3,11 @@ spring:
     url: jdbc:mysql://localhost:3306/boot_mybatis?serverTimezone=UTC&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
     username: root
     password: root
-    # ÄÚÖÃÊı¾İÔ´
-    type: com.zaxxer.hikari.HikariDataSource
+    type: com.zaxxer.hikari.HikariDataSource # å†…ç½®æ•°æ®æº
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
   configuration:
    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-   # ÅäÖÃÈ«¾ÖÀÁ¼ÓÔØ
-   lazy-loading-enabled: true
+   lazy-loading-enabled: true # å…¨å±€æ‡’åŠ è½½
    aggressive-lazy-loading: false
